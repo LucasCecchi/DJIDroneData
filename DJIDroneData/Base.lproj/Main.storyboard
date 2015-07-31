@@ -20,17 +20,9 @@
                                 <rect key="frame" x="116" y="52" width="435" height="272"/>
                                 <color key="backgroundColor" red="0.021839488636363646" green="0.021839488636363646" blue="0.021839488636363646" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h0y-ee-1jz">
-                                <rect key="frame" x="227" y="337" width="46" height="30"/>
-                                <state key="normal" title="Button">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="h0y-ee-1jz" secondAttribute="centerY" constant="-164.5" id="NMl-O8-gIV"/>
-                            <constraint firstAttribute="centerX" secondItem="h0y-ee-1jz" secondAttribute="centerX" constant="83.5" id="bN1-l6-EPr"/>
                             <constraint firstAttribute="centerY" secondItem="zMH-ND-r98" secondAttribute="centerY" id="kx2-8K-uFm"/>
                             <constraint firstAttribute="centerX" secondItem="zMH-ND-r98" secondAttribute="centerX" id="lMr-zO-B7n"/>
                         </constraints>
