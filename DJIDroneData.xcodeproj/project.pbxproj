@@ -14,6 +14,9 @@
 		A0B2D4071B694722002B7A2B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B2D4061B694722002B7A2B /* Images.xcassets */; };
 		A0B2D40A1B694722002B7A2B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0B2D4081B694722002B7A2B /* LaunchScreen.xib */; };
 		A0B2D4161B694722002B7A2B /* DJIDroneDataTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A0B2D4151B694722002B7A2B /* DJIDroneDataTests.m */; };
+		A0B2D4201B69493E002B7A2B /* DJISDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B2D41F1B69493E002B7A2B /* DJISDK.framework */; };
+		A0B2D4221B69494A002B7A2B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B2D4211B69494A002B7A2B /* libz.dylib */; };
+		A0B2D4241B694950002B7A2B /* libstdc++.6.0.9.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = A0B2D4231B694950002B7A2B /* libstdc++.6.0.9.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		A0B2D40F1B694722002B7A2B /* DJIDroneDataTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJIDroneDataTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0B2D4141B694722002B7A2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A0B2D4151B694722002B7A2B /* DJIDroneDataTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJIDroneDataTests.m; sourceTree = "<group>"; };
+		A0B2D41F1B69493E002B7A2B /* DJISDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DJISDK.framework; sourceTree = "<group>"; };
+		A0B2D4211B69494A002B7A2B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		A0B2D4231B694950002B7A2B /* libstdc++.6.0.9.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.6.0.9.dylib"; path = "usr/lib/libstdc++.6.0.9.dylib"; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +53,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B2D4241B694950002B7A2B /* libstdc++.6.0.9.dylib in Frameworks */,
+				A0B2D4221B69494A002B7A2B /* libz.dylib in Frameworks */,
+				A0B2D4201B69493E002B7A2B /* DJISDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +72,9 @@
 		A0B2D3ED1B694722002B7A2B = {
 			isa = PBXGroup;
 			children = (
+				A0B2D4231B694950002B7A2B /* libstdc++.6.0.9.dylib */,
+				A0B2D4211B69494A002B7A2B /* libz.dylib */,
+				A0B2D41F1B69493E002B7A2B /* DJISDK.framework */,
 				A0B2D3F81B694722002B7A2B /* DJIDroneData */,
 				A0B2D4121B694722002B7A2B /* DJIDroneDataTests */,
 				A0B2D3F71B694722002B7A2B /* Products */,
@@ -349,6 +361,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DJIDroneData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,6 +375,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = DJIDroneData/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -418,6 +438,7 @@
 				A0B2D41B1B694722002B7A2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A0B2D41C1B694722002B7A2B /* Build configuration list for PBXNativeTarget "DJIDroneDataTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +447,7 @@
 				A0B2D41E1B694722002B7A2B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

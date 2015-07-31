@@ -7,9 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <DJISDK/DJISDK.h>
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<DJIDroneDelegate, DJIMainControllerDelegate,DJIGimbalDelegate>
+{
+    DJIDrone *_drone;
+    DJICamera *_camera;
+    NSObject<GroundStationDelegate> *_groundStation;
+}
+@property (weak, nonatomic) IBOutlet UIView *fpvPreviewView;
 
 @end
 
